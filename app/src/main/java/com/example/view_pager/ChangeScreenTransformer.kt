@@ -27,7 +27,7 @@ class ChangeScreenTransformer:PageTransformer {
                 page.scaleX = 1f
                 page.scaleY = 1f
 
-                page.translationX = width * -position/2
+                page.translationX = -(width * -position/2)
 
                 val scale = minScale + (1 - minScale) * (1 - abs(position))
                 page.scaleX = scale
